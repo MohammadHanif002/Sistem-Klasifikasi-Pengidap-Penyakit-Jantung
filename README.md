@@ -67,6 +67,8 @@ pip install -r requirements.txt
 python app.py
 Pastikan Flask berjalan di: http://127.0.0.1:5000
 
+---
+
 ## 📊 Contoh Prediksi
 
 Masukkan data seperti:
@@ -87,9 +89,13 @@ Lalu klik Prediksi, dan sistem akan menampilkan:
 atau
 ❌ Negatif / Sehat
 
+---
+
 ## 👨‍💻 Tim Pengembang
 
 Monica Caroline Gulo
 Melinda Meikhua Permatasari
 Joe Ferdinan
 Mohammad Hanif Ardiansyah
+
+---
