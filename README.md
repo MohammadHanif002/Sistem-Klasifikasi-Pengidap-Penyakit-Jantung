@@ -51,6 +51,7 @@ Sistem ini merupakan aplikasi web yang dirancang untuk membantu tenaga medis ata
 ## 📥 Cara Menjalankan Proyek Ini
 
 ### 1. Jalankan Laravel
+
 ```bash
 cd KecerdasanBuatan
 composer install
@@ -59,6 +60,7 @@ php artisan key:generate
 php artisan serve
 
 ### 2. Jalankan Flask API
+
 ```bash
 cd backend
 python -m venv venv
