@@ -21,41 +21,83 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+# 🫀 Sistem Prediksi Penyakit Jantung Berbasis Web
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Sistem ini merupakan aplikasi web yang dirancang untuk membantu tenaga medis atau pengguna umum dalam mengklasifikasikan kemungkinan seseorang mengidap penyakit jantung, menggunakan algoritma **Random Forest**. Sistem dibangun menggunakan framework **Laravel** di sisi frontend, dan **Flask (Python)** di sisi backend untuk menjalankan model Machine Learning.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🚀 Fitur Utama
 
-## Laravel Sponsors
+- ✅ Input data pasien melalui form interaktif
+- ✅ Prediksi penyakit jantung secara real-time
+- ✅ Integrasi Laravel dengan Flask API
+- ✅ Tampilan antarmuka modern dan responsif (Tailwind CSS)
+- ✅ Visualisasi data menggunakan Chart.js
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🧠 Teknologi yang Digunakan
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+| Layer         | Teknologi                    |
+|---------------|------------------------------|
+| Frontend      | Laravel Blade, Tailwind CSS  |
+| Backend       | Python Flask API             |
+| ML Model      | Random Forest (scikit-learn) |
+| Komunikasi    | HTTP (Laravel ke Flask)      |
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📥 Cara Menjalankan Proyek Ini
 
-## Code of Conduct
+### 1. Jalankan Laravel
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+cd KecerdasanBuatan
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan serve
 
-## Security Vulnerabilities
+### 2. Jalankan Flask API
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+Pastikan Flask berjalan di: http://127.0.0.1:5000
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 📊 Contoh Prediksi
+
+Masukkan data seperti:
+Usia: 63  
+Jenis Kelamin: 1  
+Tipe Nyeri Dada: 3  
+Tekanan Darah: 145  
+Kolesterol: 233  
+Gula Puasa: 1  
+EKG Istirahat: 0  
+Detak Jantung Maks: 150  
+Angina Olahraga: 0  
+Oldpeak: 2.3  
+Slope: 0
+
+Lalu klik Prediksi, dan sistem akan menampilkan:
+✅ Positif Penyakit Jantung
+atau
+❌ Negatif / Sehat
+
+---
+
+## 👨‍💻 Tim Pengembang
+
+Monica Caroline Gulo
+Melinda Meikhua Permatasari
+Joe Ferdinan
+Mohammad Hanif Ardiansyah
+
+---
