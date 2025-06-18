@@ -18,5 +18,6 @@ def predict():
     prediction = model.predict(features_scaled)
     return jsonify({'prediction': int(prediction[0])})
 
+
 if __name__ == '__main__':
     app.run(debug=True)

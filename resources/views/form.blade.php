@@ -32,6 +32,7 @@
                 ];
             @endphp
 
+
             @foreach ($fields as $key => $label)
                 <div>
                     <label for="{{ $key }}" class="block mb-1 text-gray-300">{{ $label }}</label>
@@ -59,8 +60,7 @@
                             </label>
                         </div>
                     @else
-                        <input type="number" step="{{ $key === 'oldpeak' ? '0.1' : '1' }}" name="{{ $key }}"
-                            id="{{ $key }}"
+                        <input type="number" step="{{ $key === 'oldpeak' ? '0.1' : '1' }}" name="{{ $key }}" id="{{ $key }}"
                             class="w-full p-3 bg-gray-800 border border-gray-700 rounded text-white" required>
                     @endif
                 </div>

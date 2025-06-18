@@ -33,6 +33,9 @@ class PasienController extends Controller
         ]);
 
         $hasil = $response->json();
+        // if (!isset($hasil['prediction'])) {
+        //     return back()->withErrors(['prediction' => 'Gagal menerima prediksi dari model.']);
+        // }
 
         // Kirim ke view hasil.blade.php
         return view('hasil', [

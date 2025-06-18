@@ -10,7 +10,7 @@
             </p>
 
             <p class="text-4xl font-bold text-white mb-6">
-                {{ $prediction == 1 ? '✅ Positif Penyakit Jantung' : '❌ Negatif / Sehat' }}
+                {{ $prediction == 1 ? '🔴 Hasil Positif: Risiko Penyakit Jantung Terdeteksi' : '🟢 Hasil Negatif : Tidak Ada Tanda Penyakit Jantung' }}
             </p>
 
             <a href="{{ route('pasien.form') }}"
